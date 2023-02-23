@@ -1,7 +1,7 @@
-- name: Hello World Sample
+- name: Hello World Camelia
   hosts: all
   tasks:
-    - name: Hello Message
+    - name: Hello Message Camelia
       debug:
         msg: "Hello World camelia!"
 
