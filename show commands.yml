@@ -1,7 +1,13 @@
-- name: Hello World Sample
-  hosts: all
+- name: enable netconf-yang on csr1
+  hosts: csr1
+  connection: network_cli
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
+    - name: configuration commands
+      ios_config:
+        lines:
+        - netconf-yang
+    - name: show commands
+      ios_command:
+        commands:
+          - show netconf-yang status
 
