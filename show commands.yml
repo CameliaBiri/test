@@ -1,5 +1,5 @@
 - name: enable netconf-yang on csr1
-  hosts: csr1
+  hosts: all
   connection: network_cli
   tasks:
     - name: configuration commands
