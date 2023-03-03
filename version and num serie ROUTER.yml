@@ -6,7 +6,7 @@
 
   tasks:
     - name: GATHER ROUTER FACTS
-      cisco.ios.ios_facts:
+      cisco.iosxr.iosxr_config:
 
     - name: DISPLAY VERSION
       debug:
